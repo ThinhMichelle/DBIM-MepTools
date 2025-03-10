@@ -17,7 +17,6 @@ using System.Windows.Shapes;
 using xNet;
 using System.Net.Http;
 using System.IO;
-using MEP_Tools.Hanger;
 
 namespace MEP_Tools.Register
 {
@@ -142,7 +141,7 @@ namespace MEP_Tools.Register
         }
         private void MainWPF_Loaded(object sender, RoutedEventArgs e)
         {
-            cls_Reg.Str_Code = GetCodeKey();/*"01010000000000100110B0111100001100101000000000000010101110110"*/;
+            cls_Reg.Str_Code = GetCodeKey();
             double screenWidth = System.Windows.SystemParameters.PrimaryScreenWidth;
             double screenHeight = System.Windows.SystemParameters.PrimaryScreenHeight;
             double windowWidth = this.Width;
@@ -191,7 +190,7 @@ namespace MEP_Tools.Register
             string result = "KO";
             try
             {
-                text = Check.Get("https://bimonline.edu.vn/account", null).ToString();
+                text = Check.Get(cls_Contact.web_account, null).ToString();
                 string text_str = str + ".*?(?=Login)";
                 Match match = Regex.Match(text.ToString(), str + ".*?(?=Login)");
                 if (match != Match.Empty)
@@ -271,7 +270,6 @@ namespace MEP_Tools.Register
         {
             if (Username.Text != "")
             {
-                string checkcode1 = CheckCodeKey(cls_Reg.Str_Code);
                 if (Password.Password != "")
                 {
                     string checklogin = CheckLogin(cls_Reg.Str_Code, Username.Text, Password.Password);

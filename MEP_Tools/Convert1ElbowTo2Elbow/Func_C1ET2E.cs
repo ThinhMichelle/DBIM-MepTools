@@ -413,7 +413,7 @@ namespace MEP_Tools
                         double kc = 0;
                         foreach (IntersectionResult item in results)
                         {
-                            //System.Windows.Forms.MessageBox.Show(item.XYZPoint.ToString());
+                            //MessageBox.Show(item.XYZPoint.ToString());
                             XYZ u1 = (item.XYZPoint - point).Normalize();
                             XYZ u2 = cross.Normalize();
                             if (u1.IsAlmostEqualTo(u2))
@@ -446,7 +446,7 @@ namespace MEP_Tools
                         double kc = 0;
                         foreach (IntersectionResult item in results)
                         {
-                            //System.Windows.Forms.MessageBox.Show(item.XYZPoint.ToString());
+                            //MessageBox.Show(item.XYZPoint.ToString());
                             XYZ u1 = (item.XYZPoint - point).Normalize();
                             XYZ u2 = cross.Normalize();
                             if (u1.IsAlmostEqualTo(u2))
@@ -680,7 +680,7 @@ namespace MEP_Tools
                     double kc = 0;
                     foreach (IntersectionResult item in results)
                     {
-                        //System.Windows.Forms.MessageBox.Show(item.XYZPoint.ToString());
+                        //MessageBox.Show(item.XYZPoint.ToString());
                         XYZ u1 = (item.XYZPoint - point).Normalize();
                         XYZ u2 = cross.Normalize();
                         if (u1.IsAlmostEqualTo(u2))
@@ -712,7 +712,7 @@ namespace MEP_Tools
                     double kc = 0;
                     foreach (IntersectionResult item in results)
                     {
-                        //System.Windows.Forms.MessageBox.Show(item.XYZPoint.ToString());
+                        //MessageBox.Show(item.XYZPoint.ToString());
                         XYZ u1 = (item.XYZPoint - point).Normalize();
                         XYZ u2 = cross.Normalize();
                         if (u1.IsAlmostEqualTo(u2))

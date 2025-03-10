@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Windows;
 using System.Windows.Input;
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
@@ -29,7 +30,7 @@ namespace MEP_Tools.ThoatNuoc
                 }
                 else
                 {
-                    System.Windows.Forms.MessageBox.Show("Please enter slope value !");
+                    MessageBox.Show("Please enter slope value !");
                 }
                 
                 //SingleData.Singleton.Instance.WFData.InputWindow_ThoatNuoc.ShowDialog();

@@ -16,11 +16,15 @@ using System.Text.RegularExpressions;
 using xNet;
 using System.Net.Http;
 using System.Collections;
-using System.Web.Script.Serialization;
 using Autodesk.Revit.DB.Plumbing;
 using Autodesk.Revit.UI.Events;
 using System.Globalization;
 using System.Net;
+using System.Windows.Controls;
+using TextBox = Autodesk.Revit.UI.TextBox;
+using Image = System.Drawing.Image;
+using System.Windows;
+using System.Text.Json;
 #endregion
 
 namespace MEP_Tools
@@ -29,7 +33,7 @@ namespace MEP_Tools
     {
         public Result OnStartup(UIControlledApplication a)
         {
-            GetDate();
+            //GetDate();
             const string Ribbon_tab = "D-BIM Tools";
             const string Ribbon_panel1 = "MEP Tools";
             const string Ribbon_panel2 = "ARC Tools";
@@ -60,7 +64,7 @@ namespace MEP_Tools
             }
             #region "Images"
             //get image
-            Image imgr = Properties.Resources.icon_user;
+            Image imgr = MEP_Tools.Properties.Resources.icon_user;
             ImageSource imgSrc_r = Bmp_GetImage(imgr);
             #endregion
             #region "Create button"
@@ -89,7 +93,7 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img = Properties.Resources.Holy_New;
+            Image img = MEP_Tools.Properties.Resources.Holy_New;
             ImageSource imgSrc = Bmp_GetImage(img);
             #endregion
             #region "Create button"
@@ -114,7 +118,7 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img3 = Properties.Resources.Split_New;
+            Image img3 = MEP_Tools.Properties.Resources.Split_New;
             ImageSource imgSrc3 = Bmp_GetImage(img3);
             #endregion
             #region "Create button"
@@ -140,7 +144,7 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_hamger_h = Properties.Resources.hanger_hori;
+            Image img_hamger_h = MEP_Tools.Properties.Resources.hanger_hori;
             ImageSource imgSrc_hanger_h = Bmp_GetImage(img_hamger_h);
             #endregion
             #region "Create button"
@@ -166,7 +170,7 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_hamger_v = Properties.Resources.hanger_vertical;
+            Image img_hamger_v = MEP_Tools.Properties.Resources.hanger_vertical;
             ImageSource imgSrc_hanger_v = Bmp_GetImage(img_hamger_v);
             #endregion
             #region "Create button"
@@ -199,11 +203,11 @@ namespace MEP_Tools
             
             #region "Images"
             //get image
-            Image img_thoatnuoc1 = Properties.Resources.tee;
+            Image img_thoatnuoc1 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc1 = Bmp_GetImage(img_thoatnuoc1);
-            Image img_thoatnuoc1a = Properties.Resources.tee8;
+            Image img_thoatnuoc1a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc1a = Bmp_GetImage(img_thoatnuoc1a);
-            Image img_tooltip1 = Properties.Resources._1;
+            Image img_tooltip1 = MEP_Tools.Properties.Resources._1;
             ImageSource imgSrc_tooltip1 = Bmp_GetImage(img_tooltip1);
             #endregion
             #region "Create button"
@@ -219,11 +223,11 @@ namespace MEP_Tools
    
             #region "Images"
             //get image
-            Image img_thoatnuoc2 = Properties.Resources.tee;
+            Image img_thoatnuoc2 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc2 = Bmp_GetImage(img_thoatnuoc2);
-            Image img_thoatnuoc2a = Properties.Resources.tee8;
+            Image img_thoatnuoc2a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc2a = Bmp_GetImage(img_thoatnuoc2a);
-            Image img_tooltip2 = Properties.Resources._2;
+            Image img_tooltip2 = MEP_Tools.Properties.Resources._2;
             ImageSource imgSrc_tooltip2 = Bmp_GetImage(img_tooltip2);
             #endregion
             #region "Create button"
@@ -239,11 +243,11 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_thoatnuoc3 = Properties.Resources.tee;
+            Image img_thoatnuoc3 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc3 = Bmp_GetImage(img_thoatnuoc3);
-            Image img_thoatnuoc3a = Properties.Resources.tee8;
+            Image img_thoatnuoc3a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc3a = Bmp_GetImage(img_thoatnuoc3a);
-            Image img_tooltip3 = Properties.Resources._3;
+            Image img_tooltip3 = MEP_Tools.Properties.Resources._3;
             ImageSource imgSrc_tooltip3 = Bmp_GetImage(img_tooltip3);
             #endregion
             #region "Create button"
@@ -259,11 +263,11 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_thoatnuoc4 = Properties.Resources.tee;
+            Image img_thoatnuoc4 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc4 = Bmp_GetImage(img_thoatnuoc4);
-            Image img_thoatnuoc4a = Properties.Resources.tee8;
+            Image img_thoatnuoc4a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc4a = Bmp_GetImage(img_thoatnuoc4a);
-            Image img_tooltip4 = Properties.Resources._4;
+            Image img_tooltip4 = MEP_Tools.Properties.Resources._4;
             ImageSource imgSrc_tooltip4 = Bmp_GetImage(img_tooltip4);
             #endregion
             #region "Create button"
@@ -279,11 +283,11 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_thoatnuoc5 = Properties.Resources.tee;
+            Image img_thoatnuoc5 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc5 = Bmp_GetImage(img_thoatnuoc5);
-            Image img_thoatnuoc5a = Properties.Resources.tee8;
+            Image img_thoatnuoc5a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc5a = Bmp_GetImage(img_thoatnuoc5a);
-            Image img_tooltip5 = Properties.Resources._5;
+            Image img_tooltip5 = MEP_Tools.Properties.Resources._5;
             ImageSource imgSrc_tooltip5 = Bmp_GetImage(img_tooltip5);
             #endregion
             #region "Create button"
@@ -300,11 +304,11 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_thoatnuoc6 = Properties.Resources.tee;
+            Image img_thoatnuoc6 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc6 = Bmp_GetImage(img_thoatnuoc6);
-            Image img_thoatnuoc6a = Properties.Resources.tee8;
+            Image img_thoatnuoc6a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc6a = Bmp_GetImage(img_thoatnuoc6a);
-            Image img_tooltip6 = Properties.Resources._6;
+            Image img_tooltip6 = MEP_Tools.Properties.Resources._6;
             ImageSource imgSrc_tooltip6 = Bmp_GetImage(img_tooltip6);
             #endregion
             #region "Create button"
@@ -320,11 +324,11 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_thoatnuoc7 = Properties.Resources.tee;
+            Image img_thoatnuoc7 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc7 = Bmp_GetImage(img_thoatnuoc7);
-            Image img_thoatnuoc7a = Properties.Resources.tee8;
+            Image img_thoatnuoc7a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc7a = Bmp_GetImage(img_thoatnuoc7a);
-            Image img_tooltip7 = Properties.Resources._7;
+            Image img_tooltip7 = MEP_Tools.Properties.Resources._7;
             ImageSource imgSrc_tooltip7= Bmp_GetImage(img_tooltip7);
             #endregion
             #region "Create button"
@@ -340,11 +344,11 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_thoatnuoc8 = Properties.Resources.tee;
+            Image img_thoatnuoc8 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc8 = Bmp_GetImage(img_thoatnuoc8);
-            Image img_thoatnuoc8a = Properties.Resources.tee8;
+            Image img_thoatnuoc8a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc8a = Bmp_GetImage(img_thoatnuoc8a);
-            Image img_tooltip8 = Properties.Resources._8;
+            Image img_tooltip8 = MEP_Tools.Properties.Resources._8;
             ImageSource imgSrc_tooltip8 = Bmp_GetImage(img_tooltip8);
             #endregion
             #region "Create button"
@@ -360,11 +364,11 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_thoatnuoc9 = Properties.Resources.tee;
+            Image img_thoatnuoc9 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc9 = Bmp_GetImage(img_thoatnuoc9);
-            Image img_thoatnuoc9a = Properties.Resources.tee8;
+            Image img_thoatnuoc9a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc9a = Bmp_GetImage(img_thoatnuoc9a);
-            Image img_tooltip9 = Properties.Resources._9;
+            Image img_tooltip9 = MEP_Tools.Properties.Resources._9;
             ImageSource imgSrc_tooltip9 = Bmp_GetImage(img_tooltip9);
             #endregion
             #region "Create button"
@@ -380,11 +384,11 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_thoatnuoc10 = Properties.Resources.tee;
+            Image img_thoatnuoc10 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc10 = Bmp_GetImage(img_thoatnuoc10);
-            Image img_thoatnuoc10a = Properties.Resources.tee8;
+            Image img_thoatnuoc10a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc10a = Bmp_GetImage(img_thoatnuoc10a);
-            Image img_tooltip10 = Properties.Resources._10;
+            Image img_tooltip10 = MEP_Tools.Properties.Resources._10;
             ImageSource imgSrc_tooltip10 = Bmp_GetImage(img_tooltip10);
             #endregion
             #region "Create button"
@@ -400,11 +404,11 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_thoatnuoc11 = Properties.Resources.tee;
+            Image img_thoatnuoc11 = MEP_Tools.Properties.Resources.tee;
             ImageSource imgSrc_thoatnuoc11 = Bmp_GetImage(img_thoatnuoc11);
-            Image img_thoatnuoc11a = Properties.Resources.tee8;
+            Image img_thoatnuoc11a = MEP_Tools.Properties.Resources.tee8;
             ImageSource imgSrc_thoatnuoc11a = Bmp_GetImage(img_thoatnuoc11a);
-            Image img_tooltip11 = Properties.Resources._11;
+            Image img_tooltip11 = MEP_Tools.Properties.Resources._11;
             ImageSource imgSrc_tooltip11 = Bmp_GetImage(img_tooltip11);
             #endregion
             #region "Create button"
@@ -455,7 +459,7 @@ namespace MEP_Tools
             #region "Create C1et2e"
             #region "Images"
             //get image
-            Image img2 = Properties.Resources.Elbow24;
+            Image img2 = MEP_Tools.Properties.Resources.Elbow24;
             ImageSource imgSrc2 = Bmp_GetImage(img2);
             #endregion
             #region "Create button"
@@ -478,7 +482,7 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_siphon = Properties.Resources.siphon;
+            Image img_siphon = MEP_Tools.Properties.Resources.siphon;
             ImageSource imgSrc_siphon = Bmp_GetImage(img_siphon);
             #endregion
             #region "Create button"
@@ -510,7 +514,7 @@ namespace MEP_Tools
             } 
             #region "Images"
             //get image
-            Image img4 = Properties.Resources.SA;
+            Image img4 = MEP_Tools.Properties.Resources.SA;
             ImageSource imgSrc4 = Bmp_GetImage(img4);
             #endregion
             #region "Create button"
@@ -534,7 +538,7 @@ namespace MEP_Tools
             #region "panel4"
             #region "Images"
             //get image
-            Image imgcutwall = Properties.Resources._335478;
+            Image imgcutwall = MEP_Tools.Properties.Resources._335478;
             ImageSource imgSrccutwall = Bmp_GetImage(imgcutwall);
             #endregion
             #region "Create button"
@@ -564,7 +568,7 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image imga = Properties.Resources._2022_07_20_15_16_19;
+            Image imga = MEP_Tools.Properties.Resources._2022_07_20_15_16_19;
             ImageSource imgSrc_a = Bmp_GetImage(imga);
             #endregion
             #region "Create button"
@@ -594,7 +598,7 @@ namespace MEP_Tools
 
             #region "Images"
             //get image
-            Image img_feedback = Properties.Resources.feedback;
+            Image img_feedback = MEP_Tools.Properties.Resources.feedback;
             ImageSource imgSrc_feedback = Bmp_GetImage(img_feedback);
             #endregion
             #region "Create button"
@@ -614,43 +618,53 @@ namespace MEP_Tools
             cls_Reg.panel_thoatnuoc.Visible = false;
             cls_Reg.panel_mep.Visible = false;
             cls_Reg.panel_arc.Visible = false;
-            string str = CheckCodeKey(GetCodeKey());
-            string path = @"C:\\ProgramData\\Autodesk\\Revit\\Addins\\" + cls_Contact.version + "\\DBIM Tools\\Login.txt";
-            if (File.Exists(path))
+            if (cls_Reg.User_Name == "DanhThangDBIM" && cls_Reg.User_Password == "Dbim2025")
             {
-                string[] lines = File.ReadAllLines(path);
-                if (lines.Length >= 2)
-                {
-                    string tk = lines[0];
-                    string mk = lines[1];
-                    if (tk == "" || mk == "")
-                    {
-                        cls_Reg.Login = "";
-                    }
-                    else
-                    {
-                        cls_Reg.Login = CheckLogin(GetCodeKey(), tk, mk);
-                    }
-                }
-                else
-                {
-                    cls_Reg.Login = "";
-                }
+                cls_Reg.panel_mep.Visible = true;
+                cls_Reg.panel_arc.Visible = true;
+                cls_Reg.panel_thoatnuoc.Visible = true;
             }
             else
             {
-                cls_Reg.Login = "";
-            }
+                MessageBox.Show("Thông tin tài khoản và mật khẩu không chính xác!", "Warning", MessageBoxButton.OK, MessageBoxImage.Error);
+            }    
+            //    string str = CheckCodeKey(GetCodeKey());
+            //string path = @"C:\\ProgramData\\Autodesk\\Revit\\Addins\\" + cls_Contact.version + "\\DBIM Tools\\Login.txt";
+            //if (File.Exists(path))
+            //{
+            //    string[] lines = File.ReadAllLines(path);
+            //    if (lines.Length >= 2)
+            //    {
+            //        string tk = lines[0];
+            //        string mk = lines[1];
+            //        if (tk == "" || mk == "")
+            //        {
+            //            cls_Reg.Login = "";
+            //        }
+            //        else
+            //        {
+            //            cls_Reg.Login = CheckLogin(GetCodeKey(), tk, mk);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        cls_Reg.Login = "";
+            //    }
+            //}
+            //else
+            //{
+            //    cls_Reg.Login = "";
+            //}
             
-            if (cls_Reg.Login == "Login")
-            {
-                if (str == "OK")
-                {
-                    cls_Reg.panel_mep.Visible = true;
-                    cls_Reg.panel_arc.Visible = true;
-                    cls_Reg.panel_thoatnuoc.Visible = true;
-                }
-            }
+            //if (cls_Reg.Login == "Login")
+            //{
+            //    if (str == "OK")
+            //    {
+            //        cls_Reg.panel_mep.Visible = true;
+            //        cls_Reg.panel_arc.Visible = true;
+            //        cls_Reg.panel_thoatnuoc.Visible = true;
+            //    }
+            //}
             return Result.Succeeded;
         }
         
@@ -658,303 +672,322 @@ namespace MEP_Tools
         {
             return Result.Succeeded;
         }
+        //private BitmapSource Bmp_GetImage(Image img)
+        //{
+        //    BitmapImage bmp = new BitmapImage();
+        //    using (MemoryStream ms = new MemoryStream())
+        //    {
+        //        img.Save(ms, ImageFormat.Png);               
+        //        ms.Position = 0;
+        //        bmp.BeginInit();
+        //        bmp.CacheOption = BitmapCacheOption.OnLoad;
+        //        bmp.UriSource = null;
+        //        bmp.StreamSource = ms;
+        //        bmp.EndInit();
+
+        //    }
+        //    return bmp;
+        //}
+
         private BitmapSource Bmp_GetImage(Image img)
         {
             BitmapImage bmp = new BitmapImage();
             using (MemoryStream ms = new MemoryStream())
             {
-                img.Save(ms, ImageFormat.Png);
-                ms.Position = 0;
+                img.Save(ms, ImageFormat.Png); // Lưu hình ảnh dưới dạng PNG
+                ms.Position = 0; // Đặt lại vị trí luồng về đầu
                 bmp.BeginInit();
                 bmp.CacheOption = BitmapCacheOption.OnLoad;
                 bmp.UriSource = null;
                 bmp.StreamSource = ms;
                 bmp.EndInit();
-
             }
             return bmp;
         }
-        public string CheckLogin(string str, string user, string pass)
-        {
-            HttpRequest Check = new HttpRequest();
-            string text = "";
-            string result = "KO";
-            try
-            {
-                text = Check.Get(cls_Contact.web_account, null).ToString();
-                string text_str = str + ".*?(?=Login)";
-                Match match = Regex.Match(text.ToString(), str + ".*?(?=Login)");
-                if (match != Match.Empty)
-                {
-                    string tk = match.ToString().Split(new char[] { '|' })[1];
-                    string mk = match.ToString().Split(new char[] { '|' })[2];
-                    if (tk == user)
-                    {
-                        if (mk == pass)
-                        {
-                            cls_Reg.User_Email = match.ToString().Split(new char[] { '|' })[1];
-                            cls_Reg.User_Name = match.ToString().Split(new char[] { '|' })[3];
-                            cls_Reg.User_PhoneNumber = match.ToString().Split(new char[] { '|' })[4];
-                            cls_Reg.User_Password = match.ToString().Split(new char[] { '|' })[2];
-                            cls_Reg.User_Company = match.ToString().Split(new char[] { '|' })[5];
-                            result = "Login";
-                        }
-                        else
-                        {
-                            result = "Pass";
-                        }
-                    }
-                    else
-                    {
-                        result = "User";
-                    }
-                }
-                else
-                {
-                    result = "KO";
-                }
-            }
-            catch (Exception)
-            {
-                result = "NO";
-                System.Windows.MessageBox.Show("Please connect internet to Activate !!!");
-            }
-            return result;
-        }
-        public string CheckCodeKey(string str)
-        {
-            HttpRequest Check = new HttpRequest();
-            string text = "";
-            string result = "";
-            try
-            {
-                text = Check.Get(cls_Contact.web_date, null).ToString();
-                Match match = Regex.Match(text.ToString(), str + ".*?(?=DBIMCompany)");             
-                if (match != Match.Empty)
-                {
-                    if (CheckDate(match) == "HH")
-                    {
-                        result = "KO";
-                    }
-                    else
-                    {
-                        result = "OK";
-                    }                   
-                }
-                else
-                {
-                    result = "KO";
-                }
-            }
-            catch (Exception)
-            {
-                result = "KO";
-            }
+        #region delete check internet and date
+        //public string CheckLogin(string str, string user, string pass)
+        //{
+        //    HttpRequest Check = new HttpRequest();
+        //    string text = "";
+        //    string result = "KO";
+        //    try
+        //    {
+        //        text = Check.Get(cls_Contact.web_account, null).ToString();
+        //        string text_str = str + ".*?(?=Login)";
+        //        Match match = Regex.Match(text.ToString(), str + ".*?(?=Login)");
+        //        if (match != Match.Empty)
+        //        {
+        //            string tk = match.ToString().Split(new char[] { '|' })[1];
+        //            string mk = match.ToString().Split(new char[] { '|' })[2];
+        //            if (tk == user)
+        //            {
+        //                if (mk == pass)
+        //                {
+        //                    cls_Reg.User_Email = match.ToString().Split(new char[] { '|' })[1];
+        //                    cls_Reg.User_Name = match.ToString().Split(new char[] { '|' })[3];
+        //                    cls_Reg.User_PhoneNumber = match.ToString().Split(new char[] { '|' })[4];
+        //                    cls_Reg.User_Password = match.ToString().Split(new char[] { '|' })[2];
+        //                    cls_Reg.User_Company = match.ToString().Split(new char[] { '|' })[5];
+        //                    result = "Login";
+        //                }
+        //                else
+        //                {
+        //                    result = "Pass";
+        //                }
+        //            }
+        //            else
+        //            {
+        //                result = "User";
+        //            }
+        //        }
+        //        else
+        //        {
+        //            result = "KO";
+        //        }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        result = "NO";
+        //        System.Windows.MessageBox.Show("Please connect internet to Activate !!!");
+        //    }
+        //    return result;
+        //}
+        //public string CheckCodeKey(string str)
+        //{
+        //    HttpRequest Check = new HttpRequest();
+        //    string text = "";
+        //    string result = "";
+        //    try
+        //    {
+        //        text = Check.Get(cls_Contact.web_date, null).ToString();
+        //        Match match = Regex.Match(text.ToString(), str + ".*?(?=DBIMCompany)");             
+        //        if (match != Match.Empty)
+        //        {
+        //            if (CheckDate(match) == "HH")
+        //            {
+        //                result = "KO";
+        //            }
+        //            else
+        //            {
+        //                result = "OK";
+        //            }                   
+        //        }
+        //        else
+        //        {
+        //            result = "KO";
+        //        }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        result = "KO";
+        //    }
 
-            return result;
-        }
-        public void GetDate()
-        {
-            try
-            {
-                HttpRequest Check = new HttpRequest();
-                string text_date = Check.Get("https://clock.onlinealarmkur.com/vi/", null).ToString();
-                string str = ",";
-                Match match_date = Regex.Match(text_date.ToString(), str + ".*?(?=</div>)");
-                string[] date_real = match_date.ToString().Split(new char[] { ',' });
-                string[] date = date_real[1].Split(new char[] { ' ' });
-                cls_Reg.day_real = date[1];
-                cls_Reg.month_real = date[3];
-                cls_Reg.year_real = date[5];
-                DateTime time_real = GetDate_Real();
-                cls_Reg.day_real = time_real.Day.ToString();
-                cls_Reg.month_real = time_real.Month.ToString();
-                cls_Reg.year_real = time_real.Year.ToString();
-            }
-            catch
-            {
-                cls_Reg.day_real = "";
-                cls_Reg.month_real = "";
-                cls_Reg.year_real = "";
-            }
+        //    return result;
+        //}
+        //public void GetDate()
+        //{
+        //    try
+        //    {
+        //        HttpRequest Check = new HttpRequest();
+        //        string text_date = Check.Get("https://clock.onlinealarmkur.com/vi/", null).ToString();
+        //        string str = ",";
+        //        Match match_date = Regex.Match(text_date.ToString(), str + ".*?(?=</div>)");
+        //        string[] date_real = match_date.ToString().Split(new char[] { ',' });
+        //        string[] date = date_real[1].Split(new char[] { ' ' });
+        //        cls_Reg.day_real = date[1];
+        //        cls_Reg.month_real = date[3];
+        //        cls_Reg.year_real = date[5];
+        //        DateTime time_real = GetDate_Real();
+        //        cls_Reg.day_real = time_real.Day.ToString();
+        //        cls_Reg.month_real = time_real.Month.ToString();
+        //        cls_Reg.year_real = time_real.Year.ToString();
+        //    }
+        //    catch
+        //    {
+        //        cls_Reg.day_real = "";
+        //        cls_Reg.month_real = "";
+        //        cls_Reg.year_real = "";
+        //    }
             
-        }
+        //}
 
-        public DateTime GetDate_Real()
-        {
-            try
-            {
-                using (var response =
-                  WebRequest.Create("http://www.google.com").GetResponse())
-                    //string todaysDates =  response.Headers["date"];
-                    return DateTime.ParseExact(response.Headers["date"],
-                        "ddd, dd MMM yyyy HH:mm:ss 'GMT'",
-                        CultureInfo.InvariantCulture.DateTimeFormat,
-                        DateTimeStyles.AssumeUniversal);
-            }
-            catch (WebException)
-            {
-                return DateTime.Now; //In case something goes wrong. 
-            }
-        }
-        public string CheckDate(Match match)
-        {
-            string result = "";
-            if (match != Match.Empty)
-            {
-                SingleData.Singleton.Instance = new SingleData.Singleton();
-                
-                string[] date = match.ToString().Split(new char[] { '|' });
-                string day = date[1].Split(new char[] { '/' })[0];
-                string month = date[1].Split(new char[] { '/' })[1];
-                string year = date[1].Split(new char[] { '/' })[2];
+        //public DateTime GetDate_Real()
+        //{
+        //    try
+        //    {
+        //        using (var response =
+        //          WebRequest.Create("http://www.google.com").GetResponse())
+        //            //string todaysDates =  response.Headers["date"];
+        //            return DateTime.ParseExact(response.Headers["date"],
+        //                "ddd, dd MMM yyyy HH:mm:ss 'GMT'",
+        //                CultureInfo.InvariantCulture.DateTimeFormat,
+        //                DateTimeStyles.AssumeUniversal);
+        //    }
+        //    catch (WebException)
+        //    {
+        //        return DateTime.Now; //In case something goes wrong. 
+        //    }
+        //}   
+        //public string CheckDate(Match match)
+        //{
+        //    string result = "";
+        //    if (match != Match.Empty)
+        //    {
+        //        SingleData.Singleton.Instance = new SingleData.Singleton();
+
+        //        string[] date = match.ToString().Split(new char[] { '|' });
+        //        string day = date[1].Split(new char[] { '/' })[0];
+        //        string month = date[1].Split(new char[] { '/' })[1];
+        //        string year = date[1].Split(new char[] { '/' })[2];
 
 
-                if (cls_Reg.day_real == "")
-                {
-                    result = "HH";
-                }
-                else
-                {
-                    System.DateTime now = new System.DateTime(Convert.ToInt32(cls_Reg.year_real), Convert.ToInt32(cls_Reg.month_real), Convert.ToInt32(cls_Reg.day_real));
-                    System.DateTime then = new System.DateTime(Convert.ToInt32(year), Convert.ToInt32(month), Convert.ToInt32(day));
-                    System.TimeSpan diff1 = then.Subtract(now);
-                    int days = (int)Math.Ceiling(diff1.TotalDays);
-                    Warnings FormWarning = new Warnings(days);
-                    if (days <= 0)
-                    {
-                        result = "HH";
-                        FormWarning.ShowDialog();
-                        SingleData.Singleton.Instance.WFData.ContactWindow.ShowDialog();
-                        cls_Reg.dayleft = "0";
-                    }
-                    else if (days <= 5)
-                    {
-                        FormWarning.ShowDialog();
-                        SingleData.Singleton.Instance.WFData.ContactWindow.ShowDialog();
-                        cls_Reg.dayleft = days.ToString();
-                    }
-                    else
-                    {
-                        cls_Reg.dayleft = days.ToString();
-                    }
-                }
-            }
-            else
-            {
-                cls_Reg.dayleft = "0";
-            }
-           
-                   
-            return result;
-        }
-        public string GetCodeKey()
-        {
-            string output = RunCMD("wmic diskdrive get serialNumber");
-            string output1 = RunCMD("ipconfig");
+        //        if (cls_Reg.day_real == "")
+        //        {
+        //            result = "HH";
+        //        }
+        //        else
+        //        {
+        //            System.DateTime now = new System.DateTime(Convert.ToInt32(cls_Reg.year_real), Convert.ToInt32(cls_Reg.month_real), Convert.ToInt32(cls_Reg.day_real));
+        //            System.DateTime then = new System.DateTime(Convert.ToInt32(year), Convert.ToInt32(month), Convert.ToInt32(day));
+        //            System.TimeSpan diff1 = then.Subtract(now);
+        //            int days = (int)Math.Ceiling(diff1.TotalDays);
+        //            Warnings FormWarning = new Warnings(days);
+        //            if (days <= 0)
+        //            {
+        //                result = "HH";
+        //                FormWarning.ShowDialog();
+        //                SingleData.Singleton.Instance.WFData.ContactWindow.ShowDialog();
+        //                cls_Reg.dayleft = "0";
+        //            }
+        //            else if (days <= 5)
+        //            {
+        //                FormWarning.ShowDialog();
+        //                SingleData.Singleton.Instance.WFData.ContactWindow.ShowDialog();
+        //                cls_Reg.dayleft = days.ToString();
+        //            }
+        //            else
+        //            {
+        //                cls_Reg.dayleft = days.ToString();
+        //            }
+        //        }
+        //    }
+        //    else
+        //    {
+        //        cls_Reg.dayleft = "0";
+        //    }
 
-            string[] result1 = Regex.Split(output, @"\r\r\n|[ ]{2,}");
-            string[] result2 = Regex.Split(output1, @"\r\r\n|\r\n|[ ]{2,}");
 
-            string str1 = result1[2];
-            string str2 = "";
-            for (int i = 0; i < result2.Length; i++)
-            {
-                if (result2[i].Contains("Ethernet adapter Ethernet:"))
-                {
-                    if (result2[i + 3] == "Connection-specific DNS Suffix")
-                    {
-                        str2 = result2[i + 8].Split(new char[] { ':' })[1].Split(new char[] { ' ' })[1];
-                    }
-                    else if (result2[i + 3] == "Media State . . . . . . . . . . . : Media disconnected")
-                    {
+        //    return result;
+        //}
+        //public string GetCodeKey()
+        //{
+        //    string output = RunCMD("wmic diskdrive get serialNumber");
+        //    string output1 = RunCMD("ipconfig");
 
-                    }
-                }
-                else if (result2[i].Contains("Ethernet adapter Ethernet 2:"))
-                {
-                    if (result2[i + 3] == "Connection-specific DNS Suffix")
-                    {
-                        str2 = result2[i + 8].Split(new char[] { ':' })[1].Split(new char[] { ' ' })[1];
-                    }
-                    else if (result2[i + 3] == "Media State . . . . . . . . . . . : Media disconnected")
-                    {
+        //    string[] result1 = Regex.Split(output, @"\r\r\n|[ ]{2,}");
+        //    string[] result2 = Regex.Split(output1, @"\r\r\n|\r\n|[ ]{2,}");
 
-                    }
-                }
-            }
-            string str = "";
-            str = str1 + str2;
-            str = Encode(str);
-            return str;
-        }
-        public string Encode(string input)
-        {
-            string result = "";
-            for (int i = 0; i < input.Length; i++)
-            {
-                if (char.IsNumber(input[i]) == true)
-                {
-                    string code = "";
-                    switch (input[i])
-                    {
-                        case '0':
-                            code = "0000";
-                            break;
-                        case '1':
-                            code = "0001";
-                            break;
-                        case '2':
-                            code = "0010";
-                            break;
-                        case '3':
-                            code = "0011";
-                            break;
-                        case '4':
-                            code = "0100";
-                            break;
-                        case '5':
-                            code = "0101";
-                            break;
-                        case '6':
-                            code = "0110";
-                            break;
-                        case '7':
-                            code = "0111";
-                            break;
-                        case '8':
-                            code = "1000";
-                            break;
-                        case '9':
-                            code = "1001";
-                            break;
-                    }
-                    result += code;
-                }
-                else
-                {
-                    result += input[i];
-                }
-            }
-            return result;
-        }
-        private string RunCMD(string cmd)
-        {
-            Process cmdProcess = new Process();
-            cmdProcess.StartInfo.FileName = "cmd.exe";
-            cmdProcess.StartInfo.Arguments = "/c " + cmd;
-            cmdProcess.StartInfo.RedirectStandardOutput = true;
-            cmdProcess.StartInfo.UseShellExecute = false;
-            cmdProcess.StartInfo.CreateNoWindow = true;
-            cmdProcess.Start();
-            string output = cmdProcess.StandardOutput.ReadToEnd();
-            cmdProcess.WaitForExit();
-            if (String.IsNullOrEmpty(output))
-            {
-                return "";
-            }
-            return output;
-        }
+        //    string str1 = result1[2];
+        //    string str2 = "";
+        //    for (int i = 0; i < result2.Length; i++)
+        //    {
+        //        if (result2[i].Contains("Ethernet adapter Ethernet:"))
+        //        {
+        //            if (result2[i + 3] == "Connection-specific DNS Suffix")
+        //            {
+        //                str2 = result2[i + 8].Split(new char[] { ':' })[1].Split(new char[] { ' ' })[1];
+        //            }
+        //            else if (result2[i + 3] == "Media State . . . . . . . . . . . : Media disconnected")
+        //            {
+
+        //            }
+        //        }
+        //        else if (result2[i].Contains("Ethernet adapter Ethernet 2:"))
+        //        {
+        //            if (result2[i + 3] == "Connection-specific DNS Suffix")
+        //            {
+        //                str2 = result2[i + 8].Split(new char[] { ':' })[1].Split(new char[] { ' ' })[1];
+        //            }
+        //            else if (result2[i + 3] == "Media State . . . . . . . . . . . : Media disconnected")
+        //            {
+
+        //            }
+        //        }
+        //    }
+        //    string str = "";
+        //    str = str1 + str2;
+        //    str = Encode(str);
+        //    return str;
+        //}
+        //public string Encode(string input)
+        //{
+        //    string result = "";
+        //    for (int i = 0; i < input.Length; i++)
+        //    {
+        //        if (char.IsNumber(input[i]) == true)
+        //        {
+        //            string code = "";
+        //            switch (input[i])
+        //            {
+        //                case '0':
+        //                    code = "0000";
+        //                    break;
+        //                case '1':
+        //                    code = "0001";
+        //                    break;
+        //                case '2':
+        //                    code = "0010";
+        //                    break;
+        //                case '3':
+        //                    code = "0011";
+        //                    break;
+        //                case '4':
+        //                    code = "0100";
+        //                    break;
+        //                case '5':
+        //                    code = "0101";
+        //                    break;
+        //                case '6':
+        //                    code = "0110";
+        //                    break;
+        //                case '7':
+        //                    code = "0111";
+        //                    break;
+        //                case '8':
+        //                    code = "1000";
+        //                    break;
+        //                case '9':
+        //                    code = "1001";
+        //                    break;
+        //            }
+        //            result += code;
+        //        }
+        //        else
+        //        {
+        //            result += input[i];
+        //        }
+        //    }
+        //    return result;
+        //}
+        //private string RunCMD(string cmd)
+        //{
+        //    Process cmdProcess = new Process();
+        //    cmdProcess.StartInfo.FileName = "cmd.exe";
+        //    cmdProcess.StartInfo.Arguments = "/c " + cmd;
+        //    cmdProcess.StartInfo.RedirectStandardOutput = true;
+        //    cmdProcess.StartInfo.UseShellExecute = false;
+        //    cmdProcess.StartInfo.CreateNoWindow = true;
+        //    cmdProcess.Start();
+        //    string output = cmdProcess.StandardOutput.ReadToEnd();
+        //    cmdProcess.WaitForExit();
+        //    if (String.IsNullOrEmpty(output))
+        //    {
+        //        return "";
+        //    }
+        //    return output;
+        //}
+        #endregion
+
         public string TranslateText(string input, string lang_in, string lang_out)
         {
             string translation = "";
@@ -965,9 +998,9 @@ namespace MEP_Tools
              lang_in, lang_out, Uri.EscapeUriString(input));
                 HttpClient httpClient = new HttpClient();
                 string result = httpClient.GetStringAsync(url).Result;
-                var jsonData = new JavaScriptSerializer().Deserialize<List<dynamic>>(result);
+                var jsonData = JsonSerializer.Deserialize<List<dynamic>>(result);
                 var translationItems = jsonData[0];
-                
+
                 foreach (object item in translationItems)
                 {
                     IEnumerable translationLineObject = item as IEnumerable;
@@ -997,7 +1030,7 @@ namespace MEP_Tools
             }
             catch (Exception)
             {
-                System.Windows.Forms.MessageBox.Show("Please enter slope value again");
+                MessageBox.Show("Please enter slope value again");
                 textBox.Value = "";
                 cls_Reg.value_slope = "";
             }       

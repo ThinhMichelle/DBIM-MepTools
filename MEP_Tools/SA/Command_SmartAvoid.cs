@@ -16,6 +16,7 @@ using Autodesk.Revit.DB.IFC;
 using xNet;
 using Autodesk.Revit.DB.Mechanical;
 using Autodesk.Revit.DB.Electrical;
+using System.Windows;
 #endregion
 
 namespace MEP_Tools
@@ -53,7 +54,7 @@ namespace MEP_Tools
                     }
                     else
                     {
-                        System.Windows.Forms.MessageBox.Show("Please select Wall");
+                        MessageBox.Show("Please select Wall");
                     }
                 }    
                 p.ShowDialog();
@@ -478,7 +479,7 @@ namespace MEP_Tools
                 }
                 else
                 {
-                    System.Windows.Forms.MessageBox.Show("You have to choose the wall");
+                    MessageBox.Show("You have to choose the wall");
                 }
             });
             CommandCancel = new RelayCommand<System.Windows.Window>((p) => { return p == null ? false : true; }, (p) =>
@@ -920,7 +921,7 @@ namespace MEP_Tools
                 }
                 else
                 {
-                    System.Windows.Forms.MessageBox.Show("There are no walls");
+                    MessageBox.Show("There are no walls");
                 }               
             });
             CommandCheck = new RelayCommand<System.Windows.Window>((p) => { return p == null ? false : true; }, (p) =>

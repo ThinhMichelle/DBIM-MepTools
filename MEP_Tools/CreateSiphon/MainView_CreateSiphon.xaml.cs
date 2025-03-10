@@ -13,8 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Forms;
 using Autodesk.Revit.DB;
+using Microsoft.Win32;
 
 namespace MEP_Tools.CreateSiphon
 {
@@ -33,13 +33,14 @@ namespace MEP_Tools.CreateSiphon
         {
             try
             {
-                using (OpenFileDialog OpenFD = new OpenFileDialog())
+                OpenFileDialog OpenFD = new OpenFileDialog()
                 {
-                    OpenFD.Title = "Select Family Siphon";
-                    OpenFD.Filter = "Family Files (*rfa)|*.rfa";
-                    OpenFD.RestoreDirectory = true;
+                    Title = "Select Family Siphon",              
+                    Filter = "Family Files (*rfa)|*.rfa",
+                    RestoreDirectory = true
+                };
 
-                    if (OpenFD.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    if (OpenFD.ShowDialog() == true)
                     {
                         clsBien_Siphon.PathFamily = @OpenFD.FileName;
                         this.Hide();
@@ -91,14 +92,14 @@ namespace MEP_Tools.CreateSiphon
                     }
                     else
                     {
-                        System.Windows.Forms.MessageBox.Show("The family file has not been selected");
+                        MessageBox.Show("The family file has not been selected");
                     }
 
-                }
+                
             }
             catch (Exception)
             {
-                System.Windows.Forms.MessageBox.Show("The family file has not been selected");
+                MessageBox.Show("The family file has not been selected");
             }
         }
 

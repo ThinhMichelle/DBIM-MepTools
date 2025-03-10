@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Windows;
 using System.Windows.Input;
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
@@ -262,7 +263,7 @@ namespace MEP_Tools.ThoatNuoc
                                     {
                                         nd = nd + item + "\n";
                                     }
-                                    System.Windows.Forms.MessageBox.Show("Does not apply to pipes with id: " + "\n" + nd);
+                                    MessageBox.Show("Does not apply to pipes with id: " + "\n" + nd);
                                 }
                             }
                         }

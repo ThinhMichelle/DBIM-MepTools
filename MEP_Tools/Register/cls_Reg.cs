@@ -31,9 +31,9 @@ namespace MEP_Tools
         public static string year_real = "";
         public static string Login = "";
         public static string User_Email = "";
-        public static string User_Name = "";
+        public static string User_Name = "DanhThangDBIM";
         public static string User_PhoneNumber = "";
-        public static string User_Password = "";
+        public static string User_Password = "Dbim2025";
         public static string User_Company = "";
         public static string dayleft = "";
 

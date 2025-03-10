@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Windows;
 using System.Windows.Input;
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
@@ -101,7 +102,7 @@ namespace MEP_Tools.ThoatNuoc
                                 FamilyInstance Fitting0 = SingleData.Singleton.Instance.RevitData.Document.Create.NewElbowFitting(Conn_Origin, F.GetConnectorDifferentPoint(p_new_0, newpoint1));
                                 FamilyInstance Fitting1 = SingleData.Singleton.Instance.RevitData.Document.Create.NewElbowFitting(F.GetConnectorFromPoint(p_new_1, newpoint1), F.GetConnectorFromPoint(p_new_0, newpoint1));
                                 double len = p_new_2.get_Parameter(BuiltInParameter.CURVE_ELEM_LENGTH).AsDouble();
-                                F.Case1(Intersec, stPoint, edPoint, _pipeType.Id, levelId, p2, len, F.GetConnectorDifferentPoint(p_new_2, newpoint2).Origin, F.GetConnectorDifferentPoint(p_new_2, newpoint2), p_new_1, p_new_2, newpoint2);
+                                //F.Case1(Intersec, stPoint, edPoint, _pipeType.Id, levelId, p2, len, F.GetConnectorDifferentPoint(p_new_2, newpoint2).Origin, F.GetConnectorDifferentPoint(p_new_2, newpoint2), p_new_1, p_new_2, newpoint2);
 
                                 #endregion
                                 SingleData.Singleton.Instance.RevitData.Transaction.Commit();
@@ -119,7 +120,7 @@ namespace MEP_Tools.ThoatNuoc
                     {
                        
                         SingleData.Singleton.Instance.RevitData.Transaction.RollBack();
-                        System.Windows.Forms.MessageBox.Show("Not applicable in this case !");
+                        MessageBox.Show("Not applicable in this case !");
                         //return Result.Failed;
                     }
                     p.ShowDialog();
@@ -189,7 +190,7 @@ namespace MEP_Tools.ThoatNuoc
                     {
                         //MessageBox.Show(ex.ToString());
                         SingleData.Singleton.Instance.RevitData.Transaction.RollBack();
-                        System.Windows.Forms.MessageBox.Show("Not applicable in this case !");
+                        MessageBox.Show("Not applicable in this case !");
                         //return Result.Failed;
                     }
                     p.ShowDialog();
@@ -263,7 +264,7 @@ namespace MEP_Tools.ThoatNuoc
                 {
                     //MessageBox.Show(ex.ToString());
                     SingleData.Singleton.Instance.RevitData.Transaction.RollBack();
-                    System.Windows.Forms.MessageBox.Show("Not applicable in this case !");
+                    MessageBox.Show("Not applicable in this case !");
                     //return Result.Failed;
                 }
                 p.ShowDialog();
@@ -362,7 +363,7 @@ namespace MEP_Tools.ThoatNuoc
                     {
                         //MessageBox.Show(ex.ToString());
                         SingleData.Singleton.Instance.RevitData.Transaction.RollBack();
-                    //System.Windows.Forms.MessageBox.Show("Not applicable in this case !");
+                    //MessageBox.Show("Not applicable in this case !");
                     //return Result.Failed;
                     }
                     p.ShowDialog();
@@ -427,7 +428,7 @@ namespace MEP_Tools.ThoatNuoc
                     {
                         //MessageBox.Show(ex.ToString());
                         SingleData.Singleton.Instance.RevitData.Transaction.RollBack();
-                        System.Windows.Forms.MessageBox.Show("Not applicable in this case !");
+                        MessageBox.Show("Not applicable in this case !");
                         //return Result.Failed;
                     }
                     p.ShowDialog();

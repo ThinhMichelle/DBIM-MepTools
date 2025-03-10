@@ -115,6 +115,16 @@ namespace MEP_Tools
                 return inputWindow_HUD;
             }
         }
+
+        private MEPUpdown.MainView_MUD inputWindow_MUD;
+        public MEPUpdown.MainView_MUD InputWindow_MUD
+        {
+            get
+            {
+                if (inputWindow_MUD == null) inputWindow_MUD = new MEPUpdown.MainView_MUD();
+                return inputWindow_MUD;
+            }
+        }
         private SplitPipe.MainView_SP inputWindow_SP;
         public SplitPipe.MainView_SP InputWindow_SP
         {

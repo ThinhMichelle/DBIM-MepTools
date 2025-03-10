@@ -104,7 +104,7 @@ namespace MEP_Tools.Hanger
                                             }
                                             if (clsdata.lst_select_link.Count == 0)
                                             {
-                                                System.Windows.Forms.MessageBox.Show("Please select link !");
+                                                MessageBox.Show("Please select link !");
                                             }
                                         }
                                         else if (tab_control.SelectedItem == tab_cir)
@@ -119,33 +119,33 @@ namespace MEP_Tools.Hanger
                                             }
                                             if (clsdata.lst_select_link.Count == 0)
                                             {
-                                                System.Windows.Forms.MessageBox.Show("Please select link !");
+                                                MessageBox.Show("Please select link !");
                                             }
                                         }
                                     }
                                     else
                                     {
-                                        System.Windows.Forms.MessageBox.Show("Choose host in which hager can be attached !");
+                                        MessageBox.Show("Choose host in which hager can be attached !");
                                     }                  
                             }
                             else
                             {
-                                System.Windows.Forms.MessageBox.Show("Enter the distance from each other again !");
+                                MessageBox.Show("Enter the distance from each other again !");
                             }
                         }
                         else
                         {
-                            System.Windows.Forms.MessageBox.Show("Please enter the distance from each other (C) !");
+                            MessageBox.Show("Please enter the distance from each other (C) !");
                         }
                     }
                     else
                     {
-                        System.Windows.Forms.MessageBox.Show("Enter the distance to the edge again !");
+                        MessageBox.Show("Enter the distance to the edge again !");
                     }
                 }
                 else
                 {
-                    System.Windows.Forms.MessageBox.Show("Please enter the distance to the edge (A) !");
+                    MessageBox.Show("Please enter the distance to the edge (A) !");
                 }
             }
             else if (cbb_options.Text == "Place Pick Point" || cbb_options.Text == "Place Parallel Pick Point")
@@ -169,7 +169,7 @@ namespace MEP_Tools.Hanger
                             }
                             if (clsdata.lst_select_link.Count == 0)
                             {
-                                System.Windows.Forms.MessageBox.Show("Please select link !");
+                                MessageBox.Show("Please select link !");
                             }
                         }
                         else if (tab_control.SelectedItem == tab_cir)
@@ -184,13 +184,13 @@ namespace MEP_Tools.Hanger
                             }
                             if (clsdata.lst_select_link.Count == 0)
                             {
-                                System.Windows.Forms.MessageBox.Show("Please select link !");
+                                MessageBox.Show("Please select link !");
                             }
                         }
                     }
                     else
                     {
-                        System.Windows.Forms.MessageBox.Show("Choose host in which hager can be attached !");
+                        MessageBox.Show("Choose host in which hager can be attached !");
                     }
 
             }

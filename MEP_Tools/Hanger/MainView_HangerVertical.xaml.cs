@@ -72,12 +72,12 @@ namespace MEP_Tools.Hanger
                     }
                     else
                     {
-                        System.Windows.Forms.MessageBox.Show("Enter the distance between wall and hanger again !");
+                        MessageBox.Show("Enter the distance between wall and hanger again !");
                     }
                 }
                 else
                 {
-                    System.Windows.Forms.MessageBox.Show("Please enter the distance between wall and hanger !");
+                    MessageBox.Show("Please enter the distance between wall and hanger !");
                 }
             }
         }

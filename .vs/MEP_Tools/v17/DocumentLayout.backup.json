@@ -1,0 +1,478 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\03.DBIM\\MEP_Tools\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\mep_tools.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\mep_tools.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\mep_tools.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\mep_tools.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\mep_tools.addin||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\mep_tools.addin||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\mepupdown\\command_mud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\mepupdown\\command_mud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\createsiphon\\mainview_createsiphon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\createsiphon\\mainview_createsiphon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\holyupdown\\command_hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\holyupdown\\command_hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\contact.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\contact.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\thoatnuoc\\command_drainage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\thoatnuoc\\command_drainage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\thoatnuoc\\command_drainage1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\thoatnuoc\\command_drainage1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\contact.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\contact.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\thoatnuoc\\command_drainage9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\thoatnuoc\\command_drainage9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\thoatnuoc\\command_drainage6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\thoatnuoc\\command_drainage6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\thoatnuoc\\command_drainage2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\thoatnuoc\\command_drainage2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\thoatnuoc\\command_drainage7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\thoatnuoc\\command_drainage7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\thoatnuoc\\command_drainage5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\thoatnuoc\\command_drainage5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\thoatnuoc\\command_drainage10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\thoatnuoc\\command_drainage10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\sa\\command_smartavoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\sa\\command_smartavoid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\autocutwall\\command_autocutwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\autocutwall\\command_autocutwall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|d:\\03.dbim\\mep_tools\\mep_tools\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77055F5E-48A1-4B19-9127-B721DBEC2839}|MEP_Tools\\MEP_Tools.csproj|solutionrelative:mep_tools\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_z2lvrv01_wpftmp.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_z2lvrv01_wpftmp.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_fphrbknp_wpftmp.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_fphrbknp_wpftmp.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_1fkjfmwx_wpftmp.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_1fkjfmwx_wpftmp.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_frrw0adj_wpftmp.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_frrw0adj_wpftmp.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Command_MUD.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\MEPUpdown\\Command_MUD.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\MEPUpdown\\Command_MUD.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\MEPUpdown\\Command_MUD.cs",
+              "RelativeToolTip": "MEP_Tools\\MEPUpdown\\Command_MUD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T15:23:58.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Command_HUD.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\HolyUpdown\\Command_HUD.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\HolyUpdown\\Command_HUD.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\HolyUpdown\\Command_HUD.cs",
+              "RelativeToolTip": "MEP_Tools\\HolyUpdown\\Command_HUD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T15:23:31.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Contact.xaml",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\Contact.xaml",
+              "RelativeDocumentMoniker": "MEP_Tools\\Contact.xaml",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\Contact.xaml",
+              "RelativeToolTip": "MEP_Tools\\Contact.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-09T13:54:54.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "MEP_Tools\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:51:19.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\App.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\App.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\App.cs",
+              "RelativeToolTip": "MEP_Tools\\App.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwCsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T14:41:45.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MEP_Tools",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\MEP_Tools.csproj",
+              "RelativeDocumentMoniker": "MEP_Tools\\MEP_Tools.csproj",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\MEP_Tools.csproj",
+              "RelativeToolTip": "MEP_Tools\\MEP_Tools.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-09T14:38:37.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MEP_Tools.addin",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\MEP_Tools.addin",
+              "RelativeDocumentMoniker": "MEP_Tools\\MEP_Tools.addin",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\MEP_Tools.addin",
+              "RelativeToolTip": "MEP_Tools\\MEP_Tools.addin",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000072|",
+              "WhenOpened": "2025-03-09T14:43:22.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MEP_Tools.csproj",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\MEP_Tools.csproj",
+              "RelativeDocumentMoniker": "MEP_Tools\\MEP_Tools.csproj",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\MEP_Tools.csproj",
+              "RelativeToolTip": "MEP_Tools\\MEP_Tools.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-02T16:20:39.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\Properties\\Resources.Designer.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "MEP_Tools\\Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAIwD0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T15:24:03.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainView_CreateSiphon.xaml.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\CreateSiphon\\MainView_CreateSiphon.xaml.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\CreateSiphon\\MainView_CreateSiphon.xaml.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\CreateSiphon\\MainView_CreateSiphon.xaml.cs",
+              "RelativeToolTip": "MEP_Tools\\CreateSiphon\\MainView_CreateSiphon.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:55:14.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Command_Drainage1.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage1.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\ThoatNuoc\\Command_Drainage1.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage1.cs",
+              "RelativeToolTip": "MEP_Tools\\ThoatNuoc\\Command_Drainage1.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwIoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:57:35.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Command_Drainage2.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage2.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\ThoatNuoc\\Command_Drainage2.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage2.cs",
+              "RelativeToolTip": "MEP_Tools\\ThoatNuoc\\Command_Drainage2.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwB4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:57:42.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Command_Drainage6.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage6.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\ThoatNuoc\\Command_Drainage6.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage6.cs",
+              "RelativeToolTip": "MEP_Tools\\ThoatNuoc\\Command_Drainage6.cs",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAmwAgBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:57:48.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Command_Drainage9.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage9.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\ThoatNuoc\\Command_Drainage9.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage9.cs",
+              "RelativeToolTip": "MEP_Tools\\ThoatNuoc\\Command_Drainage9.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwB4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:58:00.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Contact.xaml.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\Contact.xaml.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\Contact.xaml.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\Contact.xaml.cs",
+              "RelativeToolTip": "MEP_Tools\\Contact.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:58:30.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Command_Drainage.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\ThoatNuoc\\Command_Drainage.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage.cs",
+              "RelativeToolTip": "MEP_Tools\\ThoatNuoc\\Command_Drainage.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwGIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:56:35.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Command_Drainage7.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage7.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\ThoatNuoc\\Command_Drainage7.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage7.cs",
+              "RelativeToolTip": "MEP_Tools\\ThoatNuoc\\Command_Drainage7.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwBwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:57:10.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Command_Drainage5.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage5.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\ThoatNuoc\\Command_Drainage5.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage5.cs",
+              "RelativeToolTip": "MEP_Tools\\ThoatNuoc\\Command_Drainage5.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwB4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:56:53.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Command_Drainage10.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage10.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\ThoatNuoc\\Command_Drainage10.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\ThoatNuoc\\Command_Drainage10.cs",
+              "RelativeToolTip": "MEP_Tools\\ThoatNuoc\\Command_Drainage10.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwB4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:56:48.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Command_SmartAvoid.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\SA\\Command_SmartAvoid.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\SA\\Command_SmartAvoid.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\SA\\Command_SmartAvoid.cs",
+              "RelativeToolTip": "MEP_Tools\\SA\\Command_SmartAvoid.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAmwDYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:56:21.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Command_AutoCutWall.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\AutoCutWall\\Command_AutoCutWall.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\AutoCutWall\\Command_AutoCutWall.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\AutoCutWall\\Command_AutoCutWall.cs",
+              "RelativeToolTip": "MEP_Tools\\AutoCutWall\\Command_AutoCutWall.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwFkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:53:39.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\AssemblyInfo.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\AssemblyInfo.cs",
+              "RelativeToolTip": "MEP_Tools\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:26:51.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MEP_Tools_z2lvrv01_wpftmp.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_z2lvrv01_wpftmp.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_z2lvrv01_wpftmp.AssemblyInfo.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_z2lvrv01_wpftmp.AssemblyInfo.cs",
+              "RelativeToolTip": "MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_z2lvrv01_wpftmp.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:20:24.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MEP_Tools_fphrbknp_wpftmp.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_fphrbknp_wpftmp.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_fphrbknp_wpftmp.AssemblyInfo.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_fphrbknp_wpftmp.AssemblyInfo.cs",
+              "RelativeToolTip": "MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_fphrbknp_wpftmp.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:16:44.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAGgJAAAAAAAAAAAEwHcJAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-09T13:16:11.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MEP_Tools_1fkjfmwx_wpftmp.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_1fkjfmwx_wpftmp.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_1fkjfmwx_wpftmp.AssemblyInfo.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_1fkjfmwx_wpftmp.AssemblyInfo.cs",
+              "RelativeToolTip": "MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_1fkjfmwx_wpftmp.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAtwA0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:16:07.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MEP_Tools_frrw0adj_wpftmp.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_frrw0adj_wpftmp.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_frrw0adj_wpftmp.AssemblyInfo.cs",
+              "ToolTip": "D:\\03.DBIM\\MEP_Tools\\MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_frrw0adj_wpftmp.AssemblyInfo.cs",
+              "RelativeToolTip": "MEP_Tools\\obj\\Debug\\net8.0-windows7.0\\MEP_Tools_frrw0adj_wpftmp.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:15:44.01Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

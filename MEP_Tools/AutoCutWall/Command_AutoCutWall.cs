@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Windows;
 using System.Windows.Input;
 
 #endregion
@@ -90,7 +91,7 @@ namespace MEP_Tools
                 }
                 catch (Exception ex)
                 {
-                    System.Windows.Forms.MessageBox.Show(ex.ToString());
+                    MessageBox.Show(ex.ToString());
                     SingleData.Singleton.Instance.RevitData.Transaction.RollBack();
                 }
             });

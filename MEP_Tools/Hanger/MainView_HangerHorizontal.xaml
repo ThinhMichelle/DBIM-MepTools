@@ -13,7 +13,11 @@
              Width="460"
     Loaded="MainWPF_Loaded">
     <Grid>
-        <GroupBox Header="Layout settings" HorizontalAlignment="Left" Height="190" Margin="10,10,0,0" VerticalAlignment="Top" Width="425">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="63*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Layout settings" HorizontalAlignment="Left" Height="190" Margin="10,10,0,0" VerticalAlignment="Top" Width="425" Grid.ColumnSpan="2">
             <Grid>
                 <Image Source="C:\ProgramData\Autodesk\Revit\Addins\2023\DBIM Tools\Images\Hori.jpg" Margin="5,5,0,0" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="180"/>
                 <Label Content="Distance to Edge (A)" HorizontalAlignment="Left" Margin="185,10,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
@@ -25,7 +29,7 @@
                     <ComboBoxItem>Place Direct Start -> End</ComboBoxItem>
                     <ComboBoxItem>Place Direct End  -> Start</ComboBoxItem>
                     <ComboBoxItem>Place Parallel Pick Point</ComboBoxItem>
-                    
+
                 </ComboBox>
                 <Label Content="Hangs on:" HorizontalAlignment="Left" Margin="185,100,0,0" VerticalAlignment="Top" Width="70" Height="40"/>
                 <Label Content="Options" HorizontalAlignment="Left" Margin="185,70,0,0" VerticalAlignment="Top" Width="60" Height="25"/>
@@ -33,7 +37,7 @@
                 <CheckBox x:Name="chk_framing" IsChecked="True" Content="Structural Framing" HorizontalAlignment="Left" Margin="260,130,0,0" VerticalAlignment="Top" Width="120" Height="25" VerticalContentAlignment="Center"/>
             </Grid>
         </GroupBox>
-        <TabControl x:Name="tab_control" HorizontalAlignment="Left" Height="225" Margin="10,200,0,0" VerticalAlignment="Top" Width="425">
+        <TabControl x:Name="tab_control" HorizontalAlignment="Left" Height="225" Margin="10,200,0,0" VerticalAlignment="Top" Width="425" Grid.ColumnSpan="2">
             <TabItem x:Name="tab_rec" Header="Hanger Pipe" Height="22" VerticalAlignment="Bottom">
                 <GroupBox Header="Hanger Settings" Height="190" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="415">
                     <Grid Margin="0,0,0,0">
@@ -52,13 +56,13 @@
             </TabItem>
         </TabControl>
 
-        <Button x:Name="btn_OK" Content="OK" HorizontalAlignment="Left" Height="25" Margin="280,430,0,0" VerticalAlignment="Top" Width="75"
+        <Button x:Name="btn_OK" Content="OK" HorizontalAlignment="Left" Height="25" Margin="72,430,0,0" VerticalAlignment="Top" Width="75"
                          Command="{Binding OKCommand}"
                          CommandParameter="{Binding ElementName = MainWPF}"
-                         Click="btn_OK_Click"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Height="25" Margin="360,430,0,0" VerticalAlignment="Top" Width="75"
+                         Click="btn_OK_Click" Grid.Column="1"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Height="25" Margin="152,430,0,0" VerticalAlignment="Top" Width="75"
                          Command="{Binding CancelCommand}"
-                         CommandParameter="{Binding ElementName = MainWPF}"/>
+                         CommandParameter="{Binding ElementName = MainWPF}" Grid.Column="1"/>
         <Button Content="?" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,430,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="Button_Click" MouseMove="Button_MouseMove">
             <Button.ToolTip>
                 <ToolTip Content="Help"/>
